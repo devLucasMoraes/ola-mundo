@@ -12,14 +12,14 @@ function AppRoutes() {
     <BrowserRouter>
       <Menu />
       <Routes>
-        <Route path="/" element={<PaginaPadrao/>}>
-          <Route index element={<Inicio/>}/>
-          <Route path="/sobremim" element={<SobreMim/>}/>
-          <Route path="post/:id" element={<Post/>}/>
+        <Route path="/" element={<PaginaPadrao />}>
+          <Route index element={<Inicio />} />
+          <Route path="/sobremim" element={<SobreMim />} />
         </Route>
-        <Route path="*" element={<NaoEncontrada/>}/>
+        <Route path="post/:id" element={<Post />} />
+        <Route path="*" element={<NaoEncontrada />} />
       </Routes>
-      <Rodape/>
+      <Rodape />
     </BrowserRouter>
   );
 }
