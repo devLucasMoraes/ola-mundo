@@ -7,7 +7,7 @@ export default function Post() {
     const parametros = useParams();
     
     const post = posts.find(post => {
-      return post.id == parametros.id
+      return post.id === Number(parametros.id)
     })
 
   return (
