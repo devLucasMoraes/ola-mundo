@@ -4,6 +4,6 @@ import React from 'react'
 
 export default function BotaoPrincipal(props) {
   return (
-    <button className={styles.botaoPrincipal}>{props.children}</button>
+    <button className={`${styles.botaoPrincipal} ${styles[props.tamanho]}`}>{props.children}</button>
   )
 }
