@@ -11,7 +11,7 @@ function AppRoutes() {
       <Menu />
       <Routes>
         <Route path="/" element={<PaginaPadrao/>}>
-          <Route path="/" element={<Inicio/>}></Route>
+          <Route index element={<Inicio/>}/>
           <Route path="/sobremim" element={<SobreMim/>}/>
         </Route>
         <Route path="*" element={<div>Pagina não encontrada</div>}/>
