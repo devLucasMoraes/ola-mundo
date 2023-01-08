@@ -1,13 +1,10 @@
 import React from 'react'
-import Banner from 'components/Banner'
 import styles from './Inicio.module.css'
 import posts from 'assets/posts.json'
 import Post from 'components/Post'
 
 export default function Inicio() {
   return (
-    <main>
-      <Banner />
       <ul className={styles.posts}>
         {posts.map((post) => (
           <li key={post.id}>
@@ -15,6 +12,5 @@ export default function Inicio() {
           </li>
         ))}
       </ul>
-    </main>
   )
 }
